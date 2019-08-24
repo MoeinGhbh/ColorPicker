@@ -1,0 +1,10 @@
+.divclrCard{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: baseline; */
+    width: 100%;
+}
+

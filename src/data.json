@@ -1,0 +1,15 @@
+{
+    "items":[
+        {
+            "color":"red",
+            "title":"First Card",
+            "rate":"3"
+        },
+        {
+            "color":"blue",
+            "title":"Second Card",
+            "rate":"5"
+
+        }
+    ]
+}

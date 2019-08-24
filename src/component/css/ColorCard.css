@@ -1,0 +1,22 @@
+.divCard{
+    display: block;
+    flex-direction: row;
+    border: 1px solid red;
+    border-color:darkblue;
+    background-color: cornsilk;
+    width: 200px;
+    height: 200px;
+}
+
+.colorShow{
+    /*display: block;
+    flex-direction: column;*/
+    border: 1px solid red;
+    border-color: green;
+    width: 50px;
+    height: 50px;
+    border:5px;
+     /* background-color: green; */
+       
+}
+
