@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import './css/ColorCard.css';
 
 export default class ColorCard extends Component {
+  constructor(){
+    super();
+    
+  }
   render() {
      const { item } = this.props;
 

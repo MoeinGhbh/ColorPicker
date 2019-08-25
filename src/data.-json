@@ -1,0 +1,18 @@
+{
+    "items":[
+        {
+            "key":"0",
+            "color":"red",
+            "title":"First Card",
+            "rate":"3"
+        },
+        {
+            "key":"1",
+            "color":"blue",
+            "title":"Second Card",
+            "rate":"5"
+
+        }
+    ]
+}
+

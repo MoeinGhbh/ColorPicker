@@ -16,8 +16,8 @@ export default class ColorForm extends Component {
 
     this.handleChangeColor = this.handleChangeColor.bind(this);
     this.handleChangeInput = this.handleChangeInput.bind(this);
-    this.handleChangeRate = this.handleChangeRate.bind(this);
-    this.addColor = this.addColor.bind(this);
+    this.handleChangeRate  = this.handleChangeRate.bind(this);
+    this.addColor          = this.addColor.bind(this);
   }
 
   handleChangeColor(e) {
@@ -43,6 +43,11 @@ export default class ColorForm extends Component {
     handler(data);
     console.log(data.items);
   }
+
+  //   delColor() {
+  //     const { data, handler } = this.props;
+  //     delete data[ this.state.key];
+  //   }
 
   render() {
     return (
@@ -75,7 +80,7 @@ export default class ColorForm extends Component {
               <label>Give Rate</label>
             </td>
             <td>
-            <InputColor
+              <InputColor
                 value={this.state.rate}
                 onChange={this.handleChangeRate}
               />
