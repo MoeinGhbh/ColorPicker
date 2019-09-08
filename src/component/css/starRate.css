@@ -1,0 +1,6 @@
+.divStar{
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    height: 20px;
+}

@@ -10,7 +10,7 @@ export default class ColorForm extends Component {
     this.state = {
       key: 0,
       inputvalue: "",
-      colorvalue: "",
+      colorvalue: "#000",
       rate: 0
     };
 
@@ -44,6 +44,10 @@ export default class ColorForm extends Component {
     console.log(data.items);
   }
 
+  test(e){
+      console.log("dddddddddddddddd"+e);
+  }
+
   //   delColor() {
   //     const { data, handler } = this.props;
   //     delete data[ this.state.key];
@@ -75,17 +79,17 @@ export default class ColorForm extends Component {
               />
             </td>
           </tr>
-          <tr>
+          {/*<tr>
             <td>
               <label>Give Rate</label>
             </td>
             <td>
-              <InputColor
+              {/* <InputColor
                 value={this.state.rate}
                 onChange={this.handleChangeRate}
-              />
+              /> 
             </td>
-          </tr>
+          </tr>*/}
           <tr>
             <td />
             <td>

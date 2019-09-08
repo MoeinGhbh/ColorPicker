@@ -11,9 +11,9 @@ export default class App extends Component {
     this.handler = this.handler.bind(this);
   }
 
-  handler(data) {
-    this.setState(data);
-  }
+   handler(data) {
+     this.setState(data);
+   }
 
   render() {
     return (

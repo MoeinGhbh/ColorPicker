@@ -1,16 +1,23 @@
 import React, { Component } from "react";
-import './css/ColorCard.css';
+import "./css/ColorCard.css";
+import StartRate from "./StarRate";
 
 export default class ColorCard extends Component {
-  constructor(){
+  constructor() {
     super();
-    
+    this.handlerRemove = this.handlerRemove.bind(this);
   }
-  render() {
-     const { item } = this.props;
+  handlerRemove() {
+    const { item, data, handler } = this.props;
+    delete data.items[item.key];
+    handler(data);
+  }
 
+  render() {
+    const { item, data, handler } = this.props;
     return (
       <div className="divCard">
+        
         <table>
           <tr>
             <td>
@@ -19,21 +26,27 @@ export default class ColorCard extends Component {
           </tr>
           <tr>
             <td>
-              <div style={{ backgroundColor: item.color }} className="colorShow" />
+              <div
+                style={{ backgroundColor: item.color }}
+                className="colorShow"
+              ></div>
             </td>
           </tr>
           <tr>
             <td>
-              <label> {item.rate}  </label>
+              <StartRate item={item}  data={data} handler={handler} /> 
             </td>
           </tr>
           <tr>
             <td>
-              <button type="button" name="remove">Remove</button>
+              <button type="button" name="remove" onClick={this.handlerRemove}>
+                Remove
+              </button>
             </td>
           </tr>
         </table>
       </div>
-    );
+      
+      );
   }
 }
